@@ -9,6 +9,5 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  profile = "default"
-  use_fips_endpoint = true
+  profile = "customprofile"
 }
