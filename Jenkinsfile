@@ -15,7 +15,7 @@ pipeline{
         }
         stage('terraform commands'){
             steps{
-                sh "terraform init"
+                sh "terraform init -downgrade"
                 sh "terraform validate"
                 sh "terraform plan"
                 sh "terraform apply -auto-approve"
