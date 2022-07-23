@@ -5,7 +5,7 @@ pipeline{
             steps{
                 withCredentials([[
                       $class: 'AmazonWebServicesCredentialsBinding',
-                       credentialsId: "bb314a7d-0bc6-4256-a56a-1973e8e798fe",
+                       credentialsId: "Jenkins_credentials_security",
                        accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                               ]]) {
